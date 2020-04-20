@@ -1,0 +1,9 @@
+ping -n 1 COMPUTER | find /I "TTL" > nul
+if %ERRORLEVEL%==0 goto LIVE
+ECHO computer не доступен
+подпрограмма обработки недоступного состояния
+... 
+Exit
+:LIVE - начало подпрограммы обработки состояния доступности узла
+... 
+... 

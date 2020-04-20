@@ -1,0 +1,1 @@
+FOR /R C:\ %%i IN (*.log) DO copy %%i E:\XLAM
